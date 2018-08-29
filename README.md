@@ -3,9 +3,6 @@ All programs and Dockerfiles for Theory of Programming Languages during Fall 201
 
 To download and use any of the language dev images go to the respective directory and follow the documentation found there
 
-
-git commit -m "Finished Fortran image creation and documentation"
-
 ## Docker images for Languages
 
 [Fortran](https://github.com/dgisolfi/CMPT331-Gisolfi/fortran)
