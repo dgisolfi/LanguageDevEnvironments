@@ -42,3 +42,14 @@ run_pascal:
 publish_pascal: build_pascal
 	@docker tag pascal_dev dgisolfi/pascal_dev:latest
 	@docker push dgisolfi/pascal_dev
+
+#SCALA IMAGE
+build_scala:
+	@docker build -t scala_dev ./Scala/.
+
+run_scala:
+	@docker run -it scala_dev bash
+
+publish_scala: build_scala
+	@docker tag scala_dev dgisolfi/scala_dev:latest
+	@docker push dgisolfi/scala_dev
