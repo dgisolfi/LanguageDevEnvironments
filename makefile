@@ -31,3 +31,14 @@ run_basic:
 publish_basic: build_basic
 	@docker tag basic_dev dgisolfi/basic_dev:latest
 	@docker push dgisolfi/basic_dev
+
+#PASCAL IMAGE
+build_pascal:
+	@docker build -t pascal_dev ./Pascal/.
+
+run_pascal:
+	@docker run -it pascal_dev bash
+
+publish_pascal: build_pascal
+	@docker tag pascal_dev dgisolfi/pascal_dev:latest
+	@docker push dgisolfi/pascal_dev
