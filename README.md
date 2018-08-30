@@ -22,7 +22,7 @@ To download and use any of the language dev images go to the respective director
 
 [Erlang](https://github.com/dgisolfi/LanguageDevEnvironments/tree/master/Erlang) using the Erlang compiler
 
-[Erlang](https://github.com/dgisolfi/LanguageDevEnvironments/tree/master/Haskell) using the Glasgow Haskell Compiler 
+[Haskell](https://github.com/dgisolfi/LanguageDevEnvironments/tree/master/Haskell) using the Glasgow Haskell Compiler 
 
 ## Docker Installation
 
