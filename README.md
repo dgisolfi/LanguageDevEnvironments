@@ -10,6 +10,8 @@ To download and use any of the language dev images go to the respective director
 
 [COBOL](https://github.com/dgisolfi/LanguageDevEnvironments/tree/master/COBOL) using the GnuCOBOL compiler
 
+[BASIC](https://github.com/dgisolfi/LanguageDevEnvironments/tree/master/BASIC) using the FreeBASIC compiler
+
 ## Docker Installation
 
 *The following is an installation guide for Docker and on an Ubuntu host machine for guides on other distros and operating systems refer to* [here](https://docs.docker.com/install/) 
