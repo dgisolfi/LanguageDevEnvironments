@@ -18,6 +18,10 @@ To download and use any of the language dev images go to the respective director
 
 [LISP](https://github.com/dgisolfi/LanguageDevEnvironments/tree/master/LISP) using the Steel Bank Common Lisp compiler
 
+[ML](https://github.com/dgisolfi/LanguageDevEnvironments/tree/master/ML) NOT FINISHED
+
+[Erlang](https://github.com/dgisolfi/LanguageDevEnvironments/tree/master/Erlang) using the Erlang compiler
+
 ## Docker Installation
 
 *The following is an installation guide for Docker and on an Ubuntu host machine for guides on other distros and operating systems refer to* [here](https://docs.docker.com/install/) 

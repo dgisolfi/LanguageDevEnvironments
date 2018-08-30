@@ -64,3 +64,25 @@ run_lisp:
 publish_lisp: build_lisp
 	@docker tag lisp_dev dgisolfi/lisp_dev:latest
 	@docker push dgisolfi/lisp_dev
+
+#ML IMAGE
+build_ML:
+	@docker build -t ml_dev ./ML/.
+
+run_ML:
+	@docker run -it ml_dev bash
+
+publish_ML: build_ML
+	@docker tag ml_dev dgisolfi/ml_dev:latest
+	@docker push dgisolfi/ml_dev
+
+#ERLANG IMAGE
+build_Erlang:
+	@docker build -t erlang_dev ./Erlang/.
+
+run_Erlang:
+	@docker run -it erlang_dev bash
+
+publish_Erlang: build_Erlang
+	@docker tag erlang_dev dgisolfi/erlang_dev:latest
+	@docker push dgisolfi/erlang_dev
