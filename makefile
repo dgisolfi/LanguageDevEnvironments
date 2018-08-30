@@ -86,3 +86,14 @@ run_Erlang:
 publish_Erlang: build_Erlang
 	@docker tag erlang_dev dgisolfi/erlang_dev:latest
 	@docker push dgisolfi/erlang_dev
+
+#HASKELL IMAGE
+build_Haskell:
+	@docker build -t haskell_dev ./Haskell/.
+
+run_Haskell:
+	@docker run -it haskell_dev bash
+
+publish_Haskell: build_Haskell
+	@docker tag haskell_dev dgisolfi/haskell_dev:latest
+	@docker push dgisolfi/haskell_dev
