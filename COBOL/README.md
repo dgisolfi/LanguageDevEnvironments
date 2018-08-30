@@ -1,6 +1,6 @@
 # COBOL Development Environment
 
-This Directory serves as the source code for a Docker image which is hosted on [Docker Hub](https://hub.docker.com/r/dgisolfi/cobol_dev/) and can be pulled, run and used as a development environment for COBOL. The base image has the GNU COBOL compiler installed, this allows a user to develop their programs in an independent environment which avoids complicated downloads and installations on other operating systems. In addition, this keeps your devices hard drive free of compilers that may not be used after the Theory of Programming Languages class is complete.
+This Directory serves as the source code for a Docker image which is hosted on [Docker Hub](https://hub.docker.com/r/dgisolfi/cobol_dev/) and can be pulled, run and used as a development environment for COBOL. The base image has the GNU COBOL compiler installed, this allows a user to develop programs in an independent environment which avoids complicated downloads and installations on other operating systems. In addition, this keeps your devices hard drive free of compilers that may not be used after the Theory of Programming Languages class is complete.
 
 # Docker Deployment
 

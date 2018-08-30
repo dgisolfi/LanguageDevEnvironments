@@ -20,3 +20,14 @@ run_cobol:
 publish_cobol: build_cobol
 	@docker tag cobol_dev dgisolfi/cobol_dev:latest
 	@docker push dgisolfi/cobol_dev
+
+#BASIC IMAGE
+build_basic:
+	@docker build -t basic_dev ./BASIC/.
+
+run_basic:
+	@docker run -it basic_dev bash
+
+publish_basic: build_basic
+	@docker tag basic_dev dgisolfi/basic_dev:latest
+	@docker push dgisolfi/basic_dev

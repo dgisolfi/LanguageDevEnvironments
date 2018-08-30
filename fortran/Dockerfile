@@ -9,5 +9,6 @@ RUN apt-get install -y \
     wget \ 
     vim
 
+# Create working Directory and place in the default hello world program
 WORKDIR /DEV
 COPY helloworld.f90 .
