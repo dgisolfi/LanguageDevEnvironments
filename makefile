@@ -53,3 +53,14 @@ run_scala:
 publish_scala: build_scala
 	@docker tag scala_dev dgisolfi/scala_dev:latest
 	@docker push dgisolfi/scala_dev
+
+#LISP IMAGE
+build_lisp:
+	@docker build -t lisp_dev ./LISP/.
+
+run_lisp:
+	@docker run -it --security-opt seccomp=unconfined lisp_dev bash
+
+publish_lisp: build_lisp
+	@docker tag lisp_dev dgisolfi/lisp_dev:latest
+	@docker push dgisolfi/lisp_dev

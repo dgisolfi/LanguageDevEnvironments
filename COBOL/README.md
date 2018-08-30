@@ -28,7 +28,7 @@ The result should be command line access as the root user to the now running Doc
 
 ## Compiling
 
-As an example program, there is an included file "helloworld.f90" located in the "DEV" directory, use this to test the compiler. To compile the file run the following:
+As an example program, there is an included file "helloworld.cob" located in the "DEV" directory, use this to test the compiler. To compile the file run the following:
 
 ```bash
 cobc -o hello-world helloworld.cob
