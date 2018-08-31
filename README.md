@@ -18,7 +18,7 @@ To download and use any of the language dev images go to the respective director
 
 [LISP](https://github.com/dgisolfi/LanguageDevEnvironments/tree/master/LISP) using the Steel Bank Common Lisp compiler
 
-[ML](https://github.com/dgisolfi/LanguageDevEnvironments/tree/master/ML) NOT FINISHED
+[ML](https://github.com/dgisolfi/LanguageDevEnvironments/tree/master/ML) using the Standard ML of New Jersey Compiler
 
 [Erlang](https://github.com/dgisolfi/LanguageDevEnvironments/tree/master/Erlang) using the Erlang compiler
 
