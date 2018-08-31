@@ -15,16 +15,16 @@ docker pull dgisolfi/pascal_dev
 Next to run an instance of the image as a container run the following:
 
 ```bash
-docker run -it pascal_dev bash
+docker run -it dgisolfi/pascal_dev bash
 ```
 
-*Note: If you would like to mount a directory in order to test run the following command instead and replace "/Path/to/Pascal/files" with the path to your files and "PRJ_Name" with the folder name*
+*Note: If you would like to mount a directory in order to test run the following command instead and replace "/Path/to/Pascal/files" with the path to your files*
 
 ```bash
-docker run -it pascal_dev -v/Path/to/Pascal/files:/DEV/PRJ_Name bash
+docker run -it -v/Path/to/Pascal/files:/DEV/PascalFiles dgisolfi/pascal_dev bash
 ```
 
-The result should be command line access as the root user to the now running Docker container. You should be located in the DEV directory within the container. If you chose to Volume mount any files first run `ls` which will list all directories and files, then `cd` into the appropriate directory of your mounted files. Due to how volumes work in Docker you have the advantage of the files being shared between the container and your host machine, meaning you may now open the directory up in an IDE and begin to program, any changes in the directory on your host will be reflected in the container.
+The result should be command line access as the root user to the now running Docker container. You should be located in the DEV directory within the container. If you chose to Volume mount any files first run `ls` which will list all directories and files, then `cd` into the directory "PascalFiles", anything changed within the mounted directory will be reflected accross both host and container. Due to how volumes work in Docker you have the advantage of the files being shared between the container and your host machine, meaning you may now open the directory up in an IDE and begin to program, any changes in the directory on your host will be reflected in the container.
 
 ## Compiling
 
@@ -39,6 +39,8 @@ This will create an executable with the name of the program, in this case, "hell
 To run your own programs alter the command to use the following format:
 
 `fpc file_name.bas`
+
+**Note: data inside a Docker container is nonpersistent. Only files that exist inside a volume mounted directory will remain after the container is exited** 
 
 With your programs written and mounted you may now use the compiler to test and run them.
 
