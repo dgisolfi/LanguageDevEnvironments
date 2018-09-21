@@ -15,7 +15,7 @@ docker pull dgisolfi/cobol_dev
 Next to run an instance of the image as a container run the following:
 
 ```bash
-dgisolfi/docker run -it cobol_dev bash
+docker run -it dgisolfi/cobol_dev:latest bash
 ```
 
 *Note: If you would like to mount a directory in order to test run the following command instead and replace "/Path/to/COBOL/files" with the path to your files*
